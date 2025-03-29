@@ -1,0 +1,182 @@
+/* CSS BY RACHEL HILL */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* CSS REST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #008080;
+  --lavender: #B57EDC;
+  --pink: #FF6B81;
+  --yellow: #FFD166;
+  --bg: #fdfdfd;
+  --text: #333;
+  --accent: #666;
+  --font: 'Raleway', sans-serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1rem;
+  max-width: 450px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+header > h1 {
+  font-size: 1.8rem;
+}
+
+header > p {
+  margin-top: 0.5rem;
+  color: var(--accent);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+nav > ul {
+  list-style: disc;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: var(--teal);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+article:has(img[alt*="smiling face"]) h4 {
+  color: var(--teal);
+}
+
+article:has(img[alt*="briefcase"]) h4 {
+  color: var(--lavender);
+}
+
+article:has(img[alt*="heart"]) h4 {
+  color: var(--pink);
+}
+
+article:has(img[alt*="hands clasping"]) h4 {
+  color: var(--yellow);
+}
+
+article:has(img[alt*="clock face"]) h4 {
+  color: var(--teal);
+}
+
+article:has(img[alt*="text conversation"]) h4 {
+  color: var(--lavender);
+}
+
+article:has(img[alt*="curly arrow"]) h4 {
+  color: var(--pink);
+}
+
+main > section {
+  margin-bottom: 2rem;
+}
+
+section ul {
+  padding-left: 1.2rem;
+}
+
+section#why-us ul li::before {
+  content: "✓ ";
+  color: var(--teal);
+  font-weight: bold;
+}
+
+article > p {
+  margin-top: 0.5rem;
+}
+
+article img[alt*="icon"] {
+  width: 40px;
+  height: 40px;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+thead > tr > th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #333;
+}
+
+tbody > tr > td {
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #333;
+}
+
+section#contact a[href*="schedule"] {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--teal);
+  color: white;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer a {
+  display: block;
+  margin-top: 0.3rem;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+footer a:hover {
+  color: var(--pink);
+}
