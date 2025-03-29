@@ -3,7 +3,7 @@
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
-/* CSS REST */
+/* CSS RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@
   --font: 'Raleway', sans-serif;
 }
 
-/* GLOBAL STYLES (mobile first/small) */
+/* GLOBAL STYLES (MOBILE FIRST/SMALL) */
 body {
   font-family: var(--font);
   background-color: var(--bg);
